@@ -7,7 +7,7 @@ Invite link to Trello board: https://trello.com/invite/b/WgtxnEOZ/17865c4137c784
 
 Link to board: https://trello.com/b/WgtxnEOZ
 
-Link to exercise folder: https://github.com/mknd7/CustomRobots/tree/group17-multirobot/amazon_robot/exercise
+**LINK to exercise folder**: https://github.com/mknd7/CustomRobots/tree/group17-multirobot/amazon_robot/exercise
 
 ## Task 1 - Steps taken to complete setup:
 
@@ -47,7 +47,7 @@ We added Docker to the allowed connections in the ACL, and when we needed the te
 
 We created a new planner, improving upon the existing example planner, and added the required predicates and actions (planner.pddl).
 
-Again, due to time constraints, we were unable to integrate with Plansys2 and Nav2, and thus also unable to build the behaviour trees required.
+Again, due to time constraints, we were unable to integrate with Plansys2 and Nav2, and thus also unable to build the behaviour trees required. However, we wrote the Plansys2 commands that should have been used (in [exercise](https://github.com/mknd7/CustomRobots/tree/group17-multirobot/amazon_robot/exercise) folder).
 
 The predicates we used are:
 - `adjacent`
@@ -67,3 +67,7 @@ The actions we used are:
 - `avoid-collision`
 
 ![Defining actions](screenshots/09.png)
+
+## Conclusion
+
+This project was a good learning experience, working through the initial setup issues to writing the PDDL planner. Overall, we completed tasks 1, 3 (no integration) and 4, with task 2 incomplete due to the bulk of the time taken in task 1's setup.
