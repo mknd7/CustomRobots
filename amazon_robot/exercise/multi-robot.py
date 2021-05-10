@@ -141,33 +141,6 @@ class WarehouseController:
         self.action_client2.send_targets(poses_robot2, loads_robot2)
 
 
-        
-    def create_test_plan(self):
-        poses_robot1 = [get_pose_stamped(**pallets['pallet_1']),
-                        get_pose_stamped(**storage_locations['storage_location_1']),
-                        get_pose_stamped(**pallets['pallet_3']),
-                        get_pose_stamped(**storage_locations['storage_location_3'])
-                        ]
-
-        loads_robot1 = [lift_stages['load'], lift_stages['unload'], lift_stages['load'], lift_stages['unload']]
-        poses_robot2 = [get_pose_stamped(**free_area['right_end_of_corridor']),
-                        get_pose_stamped(**pallets['pallet_2']),
-                        get_pose_stamped(**storage_locations['storage_location_2']),
-
-                        get_pose_stamped(**pallets['pallet_4']),
-                        get_pose_stamped(**pallets['pallet_1'])]
-
-        loads_robot2 = [lift_stages['unchanged'], lift_stages['load'], lift_stages['unload'], lift_stages['load'], lift_stages['unload']]
-        #
-        # print("Poses List ")
-        # print(poses_robot1)
-        # print("Load List ")
-        # print(loads_robot1)
-        print("Sending target goals to robot1 and robot2")
-
-        self.action_client1.send_targets(poses_robot1, loads_robot1)
-        self.action_client2.send_targets(poses_robot2, loads_robot2)
-
     def execute_plan(self):
         rclpy.spin(self.action_client1)
         rclpy.spin(self.action_client2)
