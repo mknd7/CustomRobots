@@ -1,9 +1,11 @@
-# Group 17
-Akash Harikrishnan (ah5431), Mukund Vijayaraghavan (mv2167) and Robby Siu (rs7046)
+# Report
+**Group 17**: Akash Harikrishnan (ah5431), Mukund Vijayaraghavan (mv2167) and Robby Siu (rs7046)
 
 Trello board invite link: https://trello.com/invite/b/WgtxnEOZ/17865c4137c78451ebdf922b00274c32/collaborative-robotics-project
 
 Link to board: https://trello.com/b/WgtxnEOZ
+
+Link to exercise folder: https://github.com/mknd7/CustomRobots/tree/group17-multirobot/amazon_robot/exercise
 
 ## Task 1 - Steps taken to complete setup:
 
